@@ -19,8 +19,15 @@
 .header_bottomimg-desktop {
   width: 50%;
   position: absolute;
-  top: 65%;
+  top: 50%;
   left: 25%; }
+
+@media screen and (min-width: 1000px) {
+  .header_bottomimg-desktop {
+    width: 50%;
+    position: absolute;
+    top: 65%;
+    left: 25%; } }
 
 /*BURGER MENU*/
 .topnav {
@@ -55,3 +62,27 @@
 .active {
   background-color: #000;
   color: white; }
+
+@media screen and (min-width: 1000px) {
+  .topnav {
+    overflow: hidden;
+    background-color: black;
+    position: sticky;
+    top: 90vh;
+    opacity: 0.8;
+    display: flex;
+    justify-content: space-around; }
+  .topnav #myLinks {
+    display: block;
+    display: flex;
+    font-size: 10px; }
+  .topnav a.icon {
+    visibility: hidden; }
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black; }
+  .topnav a {
+    color: white;
+    padding: 15px 15px;
+    text-decoration: none;
+    display: block; } }
