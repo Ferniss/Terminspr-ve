@@ -3,20 +3,36 @@
     margin: 0;
     padding: 0;
   }
-  
-  .mobile-container {
-    max-width: 480px;
-    margin: auto;
-    background-color: #555;
-    height: 500px;
-    color: white;
-    border-radius: 10px;
-  }
-  
+
+  .home_header{
+    height: 100vh;
+    width: 100%;
+    background-image: url("./../images/bg/header_bg_2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.header_logoimg{
+    width: 50%;
+    position: absolute;
+    top: 40%;
+    left: 25%;
+}
+
+.header_bottomimg-desktop{
+  width: 50%;
+  position: absolute;
+  top: 65%;
+  left: 25%;
+}
+  /*BURGER MENU*/
   .topnav {
     overflow: hidden;
     background-color: #333;
-    position: relative;
+    position: sticky;
+    top: 90vh;
+    opacity: 0.7;
+    width: 100%;
+    
   }
   
   .topnav #myLinks {
@@ -25,9 +41,9 @@
   
   .topnav a {
     color: white;
-    padding: 14px 16px;
+    padding: 25px 25px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 2.5em;
     display: block;
   }
   
@@ -45,18 +61,6 @@
   }
   
   .active {
-    background-color: #4CAF50;
+    background-color: #000;
     color: white;
   }
-.home_header{
-    height: 100vh;
-    width: 100%;
-    background-image: url("./../images/bg/header_bg_2.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.header_img{
-    position: absolute;
-    top: 50%;
-    left: 25%;
-}

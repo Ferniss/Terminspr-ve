@@ -7,7 +7,7 @@
 //     })
 //     .catch(err => console.error(err));
 function myFunction() {
-    var x = document.getElementById("myLinks");
+    let x = document.getElementById("myLinks");
     if (x.style.display === "block") {
       x.style.display = "none";
     } else {
