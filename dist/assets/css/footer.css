@@ -1,0 +1,11 @@
+footer {
+  height: 100vh;
+  background-image: url("./../images/bg/footerbg.jpg");
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.footer_overlay {
+  background-color: #030203;
+  opacity: 0.8;
+  color: #e0e0e0;
+  padding-top: 5em; }
