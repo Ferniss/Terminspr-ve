@@ -9,3 +9,12 @@ footer {
   opacity: 0.8;
   color: #e0e0e0;
   padding-top: 5em; }
+
+footer p {
+  font-size: 12px; }
+
+footer h6 {
+  color: #ff2a70; }
+
+footer article section {
+  padding-top: 20px; }
