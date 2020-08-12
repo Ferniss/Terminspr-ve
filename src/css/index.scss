@@ -6,7 +6,6 @@
 
   .home_header{
     height: 100vh;
-    width: 100%;
     background-image: url("./../images/bg/header_bg_2.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -35,20 +34,23 @@
   
   .topnav {
     overflow: hidden;
-    background-color: #333;
+    background-color: #030203;
     position: sticky;
     top: 90vh;
     opacity: 0.7;
-    width: 100%;
-    
+    border-style: solid;
+    border-bottom-color: #ff2a70;
+    border-top-color: #ff2a70;
   }
 
   .topnav #myLinks {
     display: none;
+    font-size: 10px;
+    padding: 0;
   }
   .topnav a {
     color: white;
-    padding: 25px 25px;
+    padding: 10px 25px;
     text-decoration: none;
     font-size: 2.5em;
     display: block;
@@ -56,7 +58,7 @@
   
   
   .topnav a.icon {
-    background: black;
+    background: 030203;
     display: block;
     position: absolute;
     right: 0;
@@ -64,29 +66,55 @@
   }
   
   .topnav a:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: #030203;
+    color: white;
   }
   
   .active {
-    background-color: #000;
+    background-color: #030203;
     color: white;
+  }
+  .box{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 50px 50px 0 0;
+    border-color: #ff2a70
+    transparent transparent transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .box2{
+    width: 0;
+height: 0;
+border-style: solid;
+border-width: 0 0 50px 50px;
+border-color: transparent transparent #ff2a70 transparent;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  .menu_logo{
+    padding-left: 15px;
   }
   @media screen and (min-width: 1000px){
     .topnav {
       overflow: hidden;
-      background-color: black;
+      background-color: #030203;
       position: sticky;
       top: 90vh;
       opacity: 0.8;
       display: flex;
       justify-content: space-around;
+      text-align: center;
     }
   
     .topnav #myLinks {
       display: block;
       display: flex;
-      font-size: 10px;
+      font-size: 6px;
+      padding-top: 5px;
     }
     
     .topnav a.icon {
@@ -94,15 +122,16 @@
     }
     
     .topnav a:hover {
-      background-color: #ddd;
-      color: black;
+      text-decoration: underline;
+      color: #ff2a70;
+      text-decoration-color: #ff2a70;
+      background-color: #030203;
     }
     .topnav a {
       color: white;
-      padding: 15px 15px;
       text-decoration: none;
       display: block;
+      padding-bottom: 0;
     }
-    
   }
   
