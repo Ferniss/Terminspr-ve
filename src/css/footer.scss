@@ -1,5 +1,5 @@
 footer{
-    height: 100vh;
+    height: 31em;
     background-image: url("./../images/bg/footerbg.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -8,7 +8,7 @@ footer{
     background-color: #030203;
     opacity: 0.8;
     color: #e0e0e0;
-    padding-top: 5em;
+    padding-top: 2em;
 }
 footer p{
     font-size: 12px;
@@ -17,5 +17,15 @@ footer h6{
     color: #ff2a70;
 }
 footer article section{
-    padding-top: 20px;
+    padding-top: 10px;
+}
+.hours{
+    color: #ff2a70;
+    font-size: 12px;
+}
+.twitter{
+    display: flex;
+}
+.fab{
+    color: #ff2a70;
 }

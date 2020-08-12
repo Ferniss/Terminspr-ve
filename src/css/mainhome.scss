@@ -10,6 +10,19 @@
 .section1_header{
     color: #ff2a70;
 }
+.event{
+    width: 20px;
+    height: 20px;
+    background-color: #e0e0e0;
+}
+.events{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding-top: 2em;
+    width: 50%;
+    padding-left: 25%;
+}
 @media screen and (min-width: 1000px){
     .home_figure-1{
         display: flex;

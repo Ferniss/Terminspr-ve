@@ -32,12 +32,21 @@
   let section2 = document.querySelector(".home_section-2")
   section2.innerHTML = `
   <header>
-  <h1>EVENTS OF THE <br> MOTH</h1>
+  <h1>EVENTS OF THE <br> MONTH</h1>
   <img src="" alt="">
 </header>
 <figure>
-  <img src="assets/images/Logo.png" alt="">
+  <img src="${data[8].url}" alt="">
+  <figcaption>25 Dec  10:30 PM  City Plaza, Newyork</figcaption>
 </figure>
+<section class="events">
+<div class="event" id="1"></div>
+<div class="event" id="2"></div>
+<div class="event" id="3"></div>
+<div class="event" id="4"></div>
+<div class="event" id="5"></div>
+<div class="event" id="6"></div>
+</section>
   `
 
   let section3 = document.querySelector(".home_section-3")
@@ -75,8 +84,7 @@
   <img src="" alt="">
 </header>
 <figure>
-  <img src="${data[22].url}" alt="">
-
+  <img src="assets/images/content-img/video_poster.jpg" alt="">
 </figure>
   `
 
