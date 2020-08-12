@@ -1,14 +1,4 @@
-    fetch("http://localhost:4000/assets/1", {
-      "method": "GET"
-    })
-    .then(response => response.json())
-.then(data =>{
-  console.log(data)
-  // document.querySelector('.src').src = data.url
-});
-
-
-function myFunction() {
+    function myFunction() {
     let x = document.getElementById("myLinks");
     if (x.style.display === "block") {
       x.style.display = "none";
@@ -17,6 +7,14 @@ function myFunction() {
     }
   }
 
+    fetch("http://localhost:4000/assets", {
+      "method": "GET"
+    })
+    .then(response => response.json())
+.then(data =>{
+  console.log(data)
+  console.log(data[0])
+  // document.querySelector('.src').src = data.url
   let section1 = document.querySelector(".home_section-1")
   section1.innerHTML = `
   <header>
@@ -24,11 +22,12 @@ function myFunction() {
   <img src="" alt="">
 </header>
 <figure>
-  <img src="assets/images/Logo.png" alt="">
-  <img src="assets/images/Logo.png" alt="">
-  <img src="assets/images/Logo.png" alt="">
+  <img src="assets/images/content-img/thumb1.jpg" alt="" class"main_img">
+  <img src="assets/images/content-img/reastaurant_1.jpg" alt="" class"main_img">
+  <img src="assets/images/content-img/thumb2.jpg" alt="" class"main_img">
 </figure>
   `
+
 
   let section2 = document.querySelector(".home_section-2")
   section2.innerHTML = `
@@ -48,11 +47,14 @@ function myFunction() {
   <img src="" alt="">
 </header>
 <figure>
-  <img src="assets/images/Logo.png" alt="">
-  <img src="assets/images/Logo.png" alt="">
-  <img src="assets/images/Logo.png" alt="">
-  <img src="assets/images/Logo.png" alt="">
-  <img src="assets/images/Logo.png" alt="">
-  <img src="assets/images/Logo.png" alt="">
+<img src="${data[15].url}" alt="">
+  <img src="${data[16].url}" alt="">
+  <img src="${data[17].url}" alt="">
+  <img src="${data[18].url}" alt="">
+  <img src="${data[19].url}" alt="">
+  <img src="${data[20].url}" alt="">
+  <img src="${data[21].url}" alt="">
 </figure>
   `
+
+});
