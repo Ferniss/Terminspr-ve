@@ -8,7 +8,8 @@ footer {
   background-color: #030203;
   opacity: 0.8;
   color: #e0e0e0;
-  padding-top: 2em; }
+  padding-top: 1em;
+  padding-left: 2em; }
 
 footer p {
   font-size: 12px; }

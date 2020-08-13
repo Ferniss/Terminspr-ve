@@ -133,14 +133,34 @@
 .contact_main {
   height: 100%;
   background-image: url("./../images/patern/dark-wood.jpg");
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-position: center;
   padding: 20px; }
 
 .contact_information {
+  position: relative;
+  padding: 20px;
+  padding-bottom: 5em;
+  padding-top: 4.5em;
   margin-top: 5em;
+  margin-bottom: 5em;
   background-color: #ff2a70;
   color: #e0e0e0; }
 
-.contact_information section {
-  border-bottom-color: #e0e0e0; }
+.information_section {
+  border-bottom: solid 2px #e0e0e0;
+  display: flex;
+  padding: 10px; }
+
+.fas {
+  padding-right: 1em; }
+
+.infobox {
+  position: absolute;
+  bottom: -1.5em;
+  right: 41%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 25px 25px 0 25px;
+  border-color: #ff2a70 transparent transparent transparent; }
