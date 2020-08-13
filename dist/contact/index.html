@@ -6,12 +6,14 @@
     <title>Document</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="/assets/css/index.css">
-    <link rel="stylesheet" href="/assets/css/mainhome.css">
+    <link rel="stylesheet" href="/assets/css/contact.css">
     <link rel="stylesheet" href="/assets/css/footer.css">
+    <link rel="stylesheet" href="/assets/css/form.css">
 </head>
 <body>
 <header class="home_header">
+<nav class="contact_nav">
+
 
         <img src="assets/images/Logo.png" alt="" class="header_logoimg">
         <img src="assets/images/bottom_line.png" alt="" class="header_bottomimg-desktop">
@@ -38,71 +40,60 @@
               <i class="fa fa-bars"></i>
             </a>
           </div>
-</header> 
-<main>
-    <section class="home_section home_section-1">
-        <header>
-            <h1>WELCOME IN <br>NIGHT<span class="section1_header">CLUB</span></psan></h1>
-            <img src="assets/images/bottom_line.png" alt="">
-          </header>
-          <figure class="home_figure-1">
-            <img src="assets/images/content-img/thumb1.jpg" alt="" class="home_space">
-            <img src="assets/images/content-img/reastaurant_1.jpg" alt="" class="home_space">
-            <img src="assets/images/content-img/thumb2.jpg" alt="" class="home_space">
-          </figure>
-    </section>
-
-    <section class="home_section home_section-2">
-        <header>
-            <h1>EVENTS OF THE <br> MONTH</h1>
-            <img src="assets/images/bottom_line.png" alt="">
-          </header>
-          <figure class="figure_event">
-    
-        </figure>
-        <section class="event_details">
-           
-        </section>
-          <section class="events">
-          <div class="event" id="1"></div>
-          <div class="event" id="2"></div>
-          <div class="event" id="3"></div>
-          <div class="event" id="4"></div>
-          <div class="event" id="5"></div>
-          <div class="event" id="6"></div>
+          <section class="contact_header">
+            <h1>CONTACT US</h1>
+            <img src="../assets/images/bottom_line2.png" alt="">
           </section>
-    </section>
-    <section class="home_section home_section-3">
-        <header>
-            <h1>NIGHTCLUB GALLERY</h1>
-            <img src="assets/images/bottom_line.png" alt="">
-          </header>
-          <figure class="home_figure">
+        </nav>
+</header> 
+<main class="contact_main">
 
-          </figure>
+    <form name="contact" method="POST" data-netlify="true" class="validate">
+        
+        <div>
+            <input placeholder="Your Name" type="text" name="Name" id="Name" class="form__input" required pattern=".{5,}" title="Skriv dit navn">
+            <span class="error"></span>
+        </div>
+    <div>
+        <input placeholder="Your Email" type="mail" name="mail" id="mail" class="form__input" required pattern=".+\.[a-z]{2,}$">
+        <span class="error"></span>
+        </div>
+
+
+              <div>
+            <input placeholder="Your website" type="text" id="Subject" name="Subject" class="form__input" required pattern=".{1,}">
+            <span class="error"></span>
+        </div>
+
+        <div>
+            <textarea  name="message" id="message" placeholder="Your Comment" class="form__input" cols="30" rows="10" required pattern=".{8,}"></textarea>
+            <span class="error"></span>
+        </div>
+    <div>
+    </div class="field">
+       
+    <div>
+        <button class="btn">
+            <input type="submit"> 
+        </button>
+    </div>
+</form>
+
+
+<article class="contact_information">
+    <section>
+
     </section>
-    <section class="home_section home_section-4">
-     <header>
-  <h1>NIGHT CLUB TRACK</h1>
-  <img src="assets/images/bottom_line.png" alt="">
-</header>
-<figure>
-  <img src="assets/images/content-img/track_thumb.jpg" alt="">
-  <audio controls src="/assets/images/Ude Af Kontrol - 3xK [Bass Boosted].mp3" type="audio/mp3"></audio>
-</figure>
+    <section>
+        <p>+61 8 7804 6310</p>
     </section>
-    <section class="home_section home_section-5">
-        <header>
-            <h1>LATEST VIDEO</h1>
-            <img src="assets/images/bottom_line.png" alt="">
-          </header>
-          <figure>
-            <img src="assets/images/content-img/video_poster.jpg" alt="">
-          </figure>
+    <section>
+        <p>@Hsoft.com</p>
     </section>
-    <section class="home_section home_section-6">
-    
+    <section>
+        <p>www.Hsoft.com</p>
     </section>
+</article>
 </main>
 <footer>
     <article class="footer_overlay">

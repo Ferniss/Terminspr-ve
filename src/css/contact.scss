@@ -1,16 +1,22 @@
 * {
-  font-family: 'Ubuntu', sans-serif; 
-    margin: 0;
-    padding: 0;
-  }
-  main{
-    background-color: #030203;
-    padding: 20px;
-  }
-
+    font-family: 'Ubuntu', sans-serif; 
+      margin: 0;
+      padding: 0;
+    }
+    .contact_header{
+        padding-top: 50%;
+        font-size: 30px;
+    }
+    .contact_nav{
+        background-color: #030203;
+        opacity: 0.8;
+        color: #e0e0e0;
+        text-align: center;
+        height: 31em;
+    }
   .home_header{
-    height: 100vh;
-    background-image: url("./../images/bg/header_bg_2.jpg");
+    height: 31em;
+    background-image: url("./../images/bg/footerbg.jpg");
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -43,7 +49,6 @@
     overflow: hidden;
     background-color: #030203;
     position: sticky;
-    top: 90vh;
     opacity: 0.7;
     border-style: solid;
     border-bottom-color: #ff2a70;
@@ -140,5 +145,21 @@ border-color: transparent transparent #ff2a70 transparent;
       display: block;
       padding-bottom: 0;
     }
+  }
+  .contact_main{
+    height: 100%;
+    background-image: url("./../images/patern/dark-wood.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px;
+  }
+  .contact_information{
+      margin-top: 5em;
+      background-color: #ff2a70;
+      color: #e0e0e0;
+  }
+
+  .contact_information section{
+      border-bottom-color: #e0e0e0;
   }
   

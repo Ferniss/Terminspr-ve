@@ -1,0 +1,53 @@
+<%- include('../partials/contacthead'); %>
+<%- include('../partials/contactheader'); %>
+<main class="contact_main">
+
+    <form name="contact" method="POST" data-netlify="true" class="validate">
+        
+        <div>
+            <input placeholder="Your Name" type="text" name="Name" id="Name" class="form__input" required pattern=".{5,}" title="Skriv dit navn">
+            <span class="error"></span>
+        </div>
+    <div>
+        <input placeholder="Your Email" type="mail" name="mail" id="mail" class="form__input" required pattern=".+\.[a-z]{2,}$">
+        <span class="error"></span>
+        </div>
+
+
+              <div>
+            <input placeholder="Your website" type="text" id="Subject" name="Subject" class="form__input" required pattern=".{1,}">
+            <span class="error"></span>
+        </div>
+
+        <div>
+            <textarea  name="message" id="message" placeholder="Your Comment" class="form__input" cols="30" rows="10" required pattern=".{8,}"></textarea>
+            <span class="error"></span>
+        </div>
+    <div>
+    </div class="field">
+       
+    <div>
+        <button class="btn">
+            <input type="submit"> 
+        </button>
+    </div>
+</form>
+
+
+<article class="contact_information">
+    <section>
+
+    </section>
+    <section>
+        <p>+61 8 7804 6310</p>
+    </section>
+    <section>
+        <p>@Hsoft.com</p>
+    </section>
+    <section>
+        <p>www.Hsoft.com</p>
+    </section>
+</article>
+</main>
+<%- include('../partials/footer'); %>
+<%- include('../partials/after-footer'); %>

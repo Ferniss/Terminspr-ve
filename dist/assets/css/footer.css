@@ -28,3 +28,6 @@ footer article section {
 
 .fab {
   color: #ff2a70; }
+
+footer article figure {
+  display: flex; }
